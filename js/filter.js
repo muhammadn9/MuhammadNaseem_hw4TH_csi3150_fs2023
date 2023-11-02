@@ -4,31 +4,31 @@ const priceMaxInput = document.getElementById("priceMax");
 const makeFilter = document.getElementById("makeFilter");
 const colorFilter = document.getElementById("colorFilter");
 
-document.getElementById("filterButton").addEventListener("click", filterCards);
+document.getElementById("filterButton").addEventListener("click", filterC1);
 
-function filterCards() {
+function filterC1() {
   const minPrice = parseFloat(priceMinInput.value);
   const maxPrice = parseFloat(priceMaxInput.value);
 
   const selectedMake = makeFilter.value;
   const selectedColor = colorFilter.value;
 
-  const cards = document.querySelectorAll(".card");
+  const c1 = document.querySelectorAll(".c1");
 
-  cards.forEach((card) => {
-    const cardPrice = parseFloat(card.getAttribute("data-price"));
-    const cardMake = card.getAttribute("data-make");
-    const cardColor = card.getAttribute("data-color");
+  c1.forEach((c1) => {
+    const c1Price = parseFloat(c1.getAttribute("data-price"));
+    const c1Make = c1.getAttribute("data-make");
+    const c1Color = c1.getAttribute("data-color");
 
     if (
-      cardPrice >= minPrice &&
-      cardPrice <= maxPrice &&
-      (selectedMake === "AllMakes" || cardMake === selectedMake) &&
-      (selectedColor === "AllColors" || cardColor === selectedColor)
+      c1Price >= minPrice &&
+      c1Price <= maxPrice &&
+      (selectedMake === "AllMakes" || c1Make === selectedMake) &&
+      (selectedColor === "AllColors" || c1Color === selectedColor)
     ) {
-      card.style.display = "block";
+      c1.style.display = "block";
     } else {
-      card.style.display = "none";
+      c1.style.display = "none";
     }
   });
 }
