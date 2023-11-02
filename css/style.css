@@ -152,21 +152,26 @@ div.container {
 }
 
 button {
-  background-color: #575454;
+  /* background-color: #575454; */
+  background-color: #fff;
   border: none;
-  color: white;
+  color: #dfa06e;
   padding: 15px 32px;
+
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
+  font-family: cursive;
+  font-size: 30px;
+  font-weight: 1000;
   border-radius: 50px;
+  /* max-width: 50%; */
 }
 
 button:hover {
   background-color: #8cba80;
   color: #3d3b3b;
-  font-family: "Courier New", Courier, monospace;
+  font-family: cursive;
 }
 
 /* hr {
@@ -193,7 +198,8 @@ h2 {
 
 p {
   color: #04aa6d;
-  font-family: "Courier New", Courier, monospace;
+  /* font-family: "Courier New", Courier, monospace; */
+  font-family: cursive;
   font-size: larger;
   text-align: center;
   padding: 1%;
@@ -246,6 +252,7 @@ p {
   color: #dfa06e;
   font-size: 25px;
   border-radius: 120px;
+  border-color: white;
 }
 
 .boxes {
