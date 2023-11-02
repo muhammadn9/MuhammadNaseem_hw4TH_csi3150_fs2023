@@ -1,0 +1,243 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans";
+}
+
+body {
+  align-items: center;
+  background-image: url(../images/layered-peaks-haikei.png);
+  background-size: cover;
+  background-attachment: fixed;
+  margin-top: 0;
+}
+
+/* .navBar {
+    align-items: center;
+    background-color: #641220;
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    margin-top: -3%;
+  } */
+
+.navBar {
+  margin: 0;
+  padding: 20px;
+  width: 250px;
+  background-color: #dfa06e;
+  position: fixed;
+  height: 100%;
+  gap: 16px;
+  overflow: auto;
+  border-radius: 10px;
+  margin-right: 2%;
+}
+
+/* .layout {
+    width: 100%;
+  
+    display: inline-table;
+    gap: 20px;
+  }
+  
+  .sec1 {
+    flex-grow: 5;
+    gap: 20px;
+  }
+  .sec2 {
+    flex-grow: 5;
+    gap: 20px;
+  }
+  .sec3 {
+    flex-grow: 5;
+    gap: 20px;
+  } */
+
+.navBar {
+  margin: 20px;
+  padding: 10px;
+}
+
+.layout {
+  display: flex;
+  flex-direction: column; /* Set the flex direction to column */
+}
+
+.sec1,
+.sec2,
+.sec3 {
+  margin: 10px 0; /* Add vertical margin */
+}
+
+.titleText {
+  margin-bottom: 10px;
+}
+
+button {
+  margin-top: 10px;
+}
+
+#filterForm label {
+  display: block;
+  margin-top: 10px;
+}
+
+#filterForm input,
+#filterForm select {
+  margin-top: 5px;
+}
+
+#filterButton {
+  margin-top: 10px;
+}
+
+/* navBar links */
+.navBar a {
+  display: block;
+  color: black;
+  padding: 20px;
+  text-decoration: none;
+}
+
+/* Active/current link */
+.navBar a.active {
+  background-color: #04aa6d;
+  color: white;
+}
+
+/* Links on mouse-over */
+.navBar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+
+/* Page content. The value of the margin-left property should match the value of the navBar's width property */
+div.container {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+/* On screens that are less than 700px wide, make the navBar into a topbar */
+@media screen and (max-width: 700px) {
+  .navBar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .navBar a {
+    float: left;
+  }
+  div.container {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .navBar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+button {
+  background-color: #575454;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  border-radius: 50px;
+}
+
+button:hover {
+  background-color: #8cba80;
+  color: #3d3b3b;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* hr {
+    color: #d7b8ff;
+  } */
+
+h1 {
+  color: #fff;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+h2 {
+  color: white;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 150%;
+  background-color: grey;
+  /* padding: 120px; */
+  /* display: flex; */
+  text-align: center;
+  border-radius: 120px;
+  padding: 15px 32px;
+}
+
+p {
+  color: #fbaf00;
+  font-family: "Courier New", Courier, monospace;
+  font-size: larger;
+  text-align: center;
+  padding: 1%;
+  margin-left: 25px;
+}
+
+.card {
+  flex: 0 0 30%;
+  margin-left: 55px;
+  margin-bottom: 55px;
+
+  box-sizing: border-box;
+  min-height: 300px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.425);
+  transition: transform 0.2s ease-in-out;
+  background-color: #1f1f1fdc;
+  text-align: center;
+}
+
+.card-inner {
+  padding: 20px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  margin: 1%;
+}
+
+/* .page-container {
+    align-items: center;
+    top: 4999;
+    right: 0;
+    width: 1500px;
+    margin-bottom: 20px;
+  }
+  
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  } */
+
+.toggleButton {
+  text-align: center;
+  color: #dfa06e;
+  font-size: 25px;
+}
